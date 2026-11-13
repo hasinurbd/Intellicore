@@ -1,0 +1,6 @@
+{
+  "name": "Artemis Resource Navigator",
+  "description": "Scientific exploration and route planning for lunar south pole in-situ resource utilization with transparent physical models and archived orbital telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
