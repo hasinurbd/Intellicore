@@ -1,22 +1,38 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Artemis Resource Navigator
+**Repository:** `Intellicore` | **Developed by:** Team Intellicore
 
-# Run and deploy your AI Studio app
+An interactive decision-support platform designed for lunar exploration and base planning under NASA’s Artemis program. It combines archived NASA orbital datasets, a customizable Mining Viability Index (MVI), constraint-based rover route optimization, and a real-time 3D mission simulation into one complete workflow.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/271b27cc-9b7b-4d38-b8a4-efe37780498c
+## 📱 Download & Install (Android APK)
 
-## Run Locally
+You can download and install the pre-built Android application directly from the root directory of this repository.
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+### 1. Download the APK
+* **[Download Artemis_Resource_Navigator.apk](./Artemis_Resource_Navigator.apk)** *(Click "View raw" or the download icon on the next page to save the file)*
 
+### 2. Installation Steps
+1. Download `Artemis_Resource_Navigator.apk` onto your Android device.
+2. Open your phone's **Files** or **Downloads** app and tap on the downloaded `.apk` file.
+3. If prompted with a security notice, tap **Settings** and enable **Allow from this source** (Install unknown apps) for your browser or file manager.
+4. Tap **Install** and wait for the installation to complete.
+5. Open **Artemis Resource Navigator** from your home screen or app drawer.
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
-7. If you have already published your app in AI Studio, please [request upload key reset](https://support.google.com/googleplay/android-developer/answer/9842756#zippy=%2Crequest-an-upload-key-reset) in Google Play Console.
+---
+
+## 📂 Repository Structure
+
+```text
+Intellicore/
+├── apk/                              # Additional APK build artifacts
+├── app/                              # Android application source code & resources
+├── gradle/                           # Gradle wrapper files
+├── public/assets/aistudio/           # UI & mission visualization assets
+├── Artemis_Resource_Navigator.apk    # Ready-to-install Android application package
+├── build.gradle.kts                  # Project-level Gradle configuration
+├── gradle.properties                 # Gradle build properties
+├── metadata.json                     # Application metadata
+├── OWNERS                            # Project maintainers
+├── README.md                         # Project documentation
+└── settings.gradle.kts               # Gradle module settings
